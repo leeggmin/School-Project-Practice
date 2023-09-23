@@ -12,14 +12,9 @@ public class ImageService {
 
     private final KakaoWebClientTemplate kakaoWebClientTemplate;
 
-    public void generateImage(KarloReq req) {
+    public String generateImage(KarloReq req) {
 
-        KarloRes response = kakaoWebClientTemplate.karlo(
-                KarloReq.builder()
-                        .prompt("A cat with white fur")
-                        .negative_prompt("sleeping cat, dog, human, ugly face, cropped")
-                        .build()
-        );
+        return kakaoWebClientTemplate.karlo(req).getImages().get(0).getImage();
 
 //        try {
 //            // 이미지 URL 가져오기

@@ -5,13 +5,13 @@ import kr.project.sii.global.error.ExceptionCode;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-@ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR)
-public class EncryptException extends CustomException {
+@ResponseStatus(value = HttpStatus.NOT_FOUND)
+public class ResourceNotFoundException extends CustomException {
 
     public static final CustomException EXCEPTION =
-            new EncryptException();
+            new ResourceNotFoundException();
 
-    private EncryptException() {
-        super(ExceptionCode.ENCRYPT);
+    public ResourceNotFoundException() {
+        super(ExceptionCode.RESOURCE_NOT_FOUND);
     }
 }
