@@ -1,0 +1,31 @@
+.initBox {
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 30px;
+}
+
+.defaultText {
+  height: 50px;
+  width: 100%;
+  background-color: #3c3d50;
+  border-radius: 19px;
+  color: #ffffff;
+  padding: 12px 10px;
+  padding-left: 40px;
+  font-size: medium;
+  border: none;
+}
+
+.defaultText::placeholder {
+  color: #ffffff80;
+}
+
+.defaultText:focus {
+  border: solid 1px #5beee5;
+  outline: none;
+}
+
+/* .defaultText:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #181924 inset; // 배경색 변경
+  -webkit-text-fill-color: white; // 글자색 변경
+} */

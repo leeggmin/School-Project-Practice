@@ -1,0 +1,25 @@
+div .init {
+  margin-left: 20%;
+  margin-top: 3%;
+  margin-right: 20%;
+}
+
+.initBox #generateBtn {
+  white-space: nowrap;
+  width: 125px;
+  height: 48px;
+  background-color: #3c3d50;
+  border-radius: 19px;
+  border: solid 1px #5beee5;
+  color: #ffffff;
+  margin-left: 208px;
+}
+
+.initBox #generateBtn:active {
+  background-color: #5beee5;
+  color: #3c3d50;
+}
+
+.initBox .box1 {
+  white-space: nowrap;
+}

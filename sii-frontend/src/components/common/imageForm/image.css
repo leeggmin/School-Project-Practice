@@ -1,0 +1,48 @@
+.dropzone {
+  background-color: #bdbdbd;
+  height: 512px;
+  width: 512px;
+  border-radius: 23px;
+  margin-top: 70px;
+}
+
+.imageDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  white-space: nowrap;
+  width: fit-content;
+  margin: auto;
+}
+
+.btnForm {
+  display: inline-block;
+}
+
+.btnForm p {
+  color: #ffffff80;
+  margin-top: 280px;
+  margin-left: 90px;
+  margin-right: 90px;
+  white-space: nowrap;
+}
+
+.btnForm #uploadBtn {
+  white-space: nowrap;
+  width: 135px;
+  height: 48px;
+  background-color: #3c3d50;
+  border-radius: 17px;
+  border: solid 1px #5beee5;
+  color: #ffffff;
+  margin-left: 130px;
+  margin-right: 130px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.btnForm #uploadBtn:active {
+  background-color: #5beee5;
+  color: #3c3d50;
+}

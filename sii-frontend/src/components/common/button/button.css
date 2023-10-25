@@ -1,0 +1,14 @@
+.btnType1 {
+  background-color: #3c3d50;
+  color: #ffffff;
+  border-radius: 15px;
+  width: 120px;
+  height: 45px;
+  border: none;
+  margin-right: 13px;
+}
+
+.btnType1.selected {
+  color: #5beee5; /* 흰색 텍스트 */
+  outline: none;
+}

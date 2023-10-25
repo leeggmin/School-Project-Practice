@@ -1,0 +1,16 @@
+div .initHome {
+  margin-left: 12%;
+  margin-top: 2%;
+  margin-right: 12%;
+}
+
+div .sortBox {
+  margin-left: 80%;
+}
+
+.postData {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}

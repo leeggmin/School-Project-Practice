@@ -1,0 +1,16 @@
+.postBox {
+  margin: 30px 15px 100px 15px;
+}
+
+.image-container {
+  width: 390px;
+  height: 314px;
+  border: none;
+  overflow: hidden;
+  border-radius: 17px;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
