@@ -33,10 +33,14 @@ public class Post {
     @Column(columnDefinition = "MEDIUMTEXT", nullable = false)
     private String negativePrompt;
 
+    @NotNull
+    private int likes;
+
     @Builder
     public Post(String prompt, String negativePrompt, String imgUrl) {
         this.prompt = prompt;
         this.negativePrompt = negativePrompt;
         this.imgUrl = imgUrl;
+        this.likes = 0;
     }
 }
