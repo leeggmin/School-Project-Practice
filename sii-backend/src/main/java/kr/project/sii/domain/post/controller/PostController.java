@@ -29,6 +29,11 @@ public class PostController {
         return ResponseData.of(HttpStatus.OK, "전체 게시물 조회 성공", postService.findAll());
     }
 
+    @GetMapping("/likes")
+    public ResponseData<List<Post>> readAllByLikes() {
+        return ResponseData.of(HttpStatus.OK, "좋아요수로 전체 게시물 조회 성공", postService.findAllByLikes());
+    }
+
     @GetMapping("/{postId}")
     public ResponseData<Post> readOne(@PathVariable("postId") Long postId) {
         return ResponseData.of(HttpStatus.OK, "단일 게시물 조회 성공", postService.findOne(postId));

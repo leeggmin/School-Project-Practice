@@ -29,4 +29,8 @@ public class PostService {
         return postRepository.findById(postId)
                 .orElseThrow(ResourceNotFoundException::new);
     }
+
+    public List<Post> findAllByLikes() {
+        return postRepository.findAllByOrderByLikesDesc();
+    }
 }
