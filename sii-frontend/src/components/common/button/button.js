@@ -1,15 +1,11 @@
 import React from "react";
 import "./button.css";
 
-const Button = ({ name, selected, setSelected }) => {
-  const handleClick = () => {
-    setSelected(name);
-  };
-
+const Button = ({ name, selected, onClick }) => {
   return (
     <button
       className={`btnType1 ${selected ? "selected" : ""}`}
-      onClick={handleClick}
+      onClick={onClick}
     >
       {name}
     </button>

@@ -17,7 +17,7 @@ const Upload = () => {
     img_url: "",
   });
 
-  const [selectedButton, setSelectedButton] = useState("");
+  const [selectedButton, setSelectedButton] = useState("512 x 512");
 
   const onChangeUploadData = (e) => {
     const { name, value } = e.target;
@@ -56,23 +56,35 @@ const Upload = () => {
           <Text name="image dimensions"></Text>
           <Button
             name="512 x 512"
-            selected={selectedButton === "512 x 512"}
-            setSelected={setSelectedButton}
+            selected={selectedButton === "512 x 512" ? true : false}
+            onClick={() => {
+              request();
+              setSelectedButton("512 x 512");
+            }}
           />
           <Button
             name="640 x 384"
-            selected={selectedButton === "640 x 384"}
-            setSelected={setSelectedButton}
+            selected={selectedButton === "640 x 384" ? true : false}
+            onClick={() => {
+              request();
+              setSelectedButton("640 x 384");
+            }}
           />
           <Button
             name="384 x 640"
-            selected={selectedButton === "384 x 640"}
-            setSelected={setSelectedButton}
+            selected={selectedButton === "384 x 640" ? true : false}
+            onClick={() => {
+              request();
+              setSelectedButton("384 x 640");
+            }}
           />
           <Button
             name="1024 x 1024"
-            selected={selectedButton === "1024 x 1024"}
-            setSelected={setSelectedButton}
+            selected={selectedButton === "1024 x 1024" ? true : false}
+            onClick={() => {
+              request();
+              setSelectedButton("1024 x 1024");
+            }}
           />
           <button id="generateBtn" onClick={request}>
             + Generate
