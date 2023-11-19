@@ -3,9 +3,9 @@ import "./postBox.css";
 import HeartImg from "../../../img/heart.png";
 import ViewImg from "../../../img/view.png";
 
-const PostBox = ({ imgSrc, likes }) => {
+const PostBox = ({ id, imgSrc, likes, onClick }) => {
   return (
-    <div className="postBox">
+    <div className="postBox" onClick={() => onClick(id)}>
       <div className="image-container">
         <img src={imgSrc} alt="" className="responsive-image"></img>
       </div>
