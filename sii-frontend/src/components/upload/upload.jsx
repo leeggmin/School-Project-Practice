@@ -58,7 +58,6 @@ const Upload = () => {
             name="512 x 512"
             selected={selectedButton === "512 x 512" ? true : false}
             onClick={() => {
-              request();
               setSelectedButton("512 x 512");
             }}
           />
@@ -66,7 +65,6 @@ const Upload = () => {
             name="640 x 384"
             selected={selectedButton === "640 x 384" ? true : false}
             onClick={() => {
-              request();
               setSelectedButton("640 x 384");
             }}
           />
@@ -74,7 +72,6 @@ const Upload = () => {
             name="384 x 640"
             selected={selectedButton === "384 x 640" ? true : false}
             onClick={() => {
-              request();
               setSelectedButton("384 x 640");
             }}
           />
@@ -82,7 +79,6 @@ const Upload = () => {
             name="1024 x 1024"
             selected={selectedButton === "1024 x 1024" ? true : false}
             onClick={() => {
-              request();
               setSelectedButton("1024 x 1024");
             }}
           />
